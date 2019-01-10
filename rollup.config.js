@@ -10,5 +10,6 @@ module.exports = {
   },
   plugins: [
     (isProduction && browsersync({server: 'public'}))
+    // (isProduction && browsersync({proxy: "localhost:8888"}))
   ]
 };
