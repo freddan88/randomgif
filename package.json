@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "rollup --config",
+    "start": "rollup --config --watch --environment NODE_ENV:production"
+  },
+  "dependencies": {
+    "rollup": "^1.1.0",
+    "rollup-plugin-browsersync": "^1.0.0"
+  }
+}
