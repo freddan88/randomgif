@@ -1,0 +1,19 @@
+// NOTE: Keep your selectors short, try to not nest more than three selectors.
+
+.post {
+  .post__title {
+    font-size: 40px;
+  }
+}
+
+// .post .post__title { font-size: 40px; }
+
+.block {
+  background: green;
+
+  @media screen and (max-width: 800px) {
+    background: red;
+  }
+}
+
+// .block { background: green; } @media screen and (max-width: 800px) { .block { background: red; } }

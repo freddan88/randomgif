@@ -1,0 +1,12 @@
+@mixin square($side) {
+  width: $side;
+  height: $side;
+}
+
+.block {
+  @include square(100px);
+
+  background: red;
+}
+
+// .block { width: 100px; height: 100px; background: red; }
