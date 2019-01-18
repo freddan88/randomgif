@@ -1,0 +1,10 @@
+.header {
+  display: grid;
+  grid-template-columns: 80px 1fr 80px;
+
+  .header__logo {
+    grid-column: 2 / 3;
+    max-width: 100%;
+    height: auto;
+  }
+}

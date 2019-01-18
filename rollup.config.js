@@ -1,6 +1,8 @@
 const browsersync = require ('rollup-plugin-browsersync');
 const postcss = require ('rollup-plugin-postcss');
 const normalize = require ('postcss-normalize');
+const cssnano = require ('cssnano');
+const sass = require ('node-sass')
 const isProduction = process.env.NODE_ENV === 'production';
 const isDevelopment = isProduction === false;
 
@@ -16,8 +18,10 @@ module.exports = {
     postcss({
       extract: true,
       plugins: [
-        normalize
-      ]
-      })
+        normalize(),
+        cssnano(),
+      ],
+      sourceMap: isDevelopment,
+    }),
     ]
 };

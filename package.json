@@ -2,16 +2,22 @@
   "private": true,
   "scripts": {
     "build": "rollup --config",
-    "start": "rollup --config --watch --environment NODE_ENV:production"
+    "start": "rollup --config --watch --environment NODE_ENV:production",
+    "test": "stylelint -v",
+    "www": "php -S 0.0.0.0:8585",
+    "help": "npx browserslist && echo 'Argumets to > npm run: build | start | test | www'"
   },
   "dependencies": {
     "autoprefixer": "^9.4.5",
     "browserslist": "^4.4.0",
+    "cssnano": "^4.1.8",
     "node-sass": "^4.11.0",
     "postcss-normalize": "^7.0.1",
     "rollup": "^1.1.0",
     "rollup-plugin-browsersync": "^1.0.0",
-    "rollup-plugin-postcss": "^1.6.3"
+    "rollup-plugin-postcss": "^1.6.3",
+    "stylelint": "^9.9.0",
+    "stylelint-config-standard": "^18.2.0"
   },
   "browserslist": [
     ">0.25%",

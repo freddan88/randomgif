@@ -1,0 +1,35 @@
+.giphy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .search {
+    display: flex;
+  }
+}
+
+.search__field{
+  height: 40px;
+  border: 2px solid #913BF1;
+  font-size: 1.2rem;
+  border-right: none;
+  outline: none;
+  width: 800px;
+  padding-left: 10px;
+
+  &::placeholder{
+    font-size: 0.9rem;
+
+  }
+}
+
+.search__button{
+  width: 45px;
+  color: white;
+  outline: none;
+  font-size: 1.2rem;
+  border: 2px solid #913BF1;
+  background: rgb(169,67,189);
+  cursor: pointer;
+  background: linear-gradient(229deg, rgba(169,67,189,1) 2%, rgba(145,59,241,1) 100%);
+}
