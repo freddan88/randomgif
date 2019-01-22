@@ -8,20 +8,34 @@
   "scripts": {
     "build": "rollup --config",
     "start": "rollup --config --watch --environment NODE_ENV:production",
-    "test": "stylelint -v",
+    "test": "stylelint '**/*.scss'; exit 0",
     "www": "php -S 0.0.0.0:8585",
     "help": "npx browserslist && echo 'Argumets to > npm run: build | start | test | www'"
   },
+  "stylelint": {
+    "plugins": [
+      "stylelint-scss"
+    ],
+    "extends": "stylelint-config-standard"
+  },
   "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "autoprefixer": "^9.4.5",
     "browserslist": "^4.4.0",
     "cssnano": "^4.1.8",
     "node-sass": "^4.11.0",
     "postcss-normalize": "^7.0.1",
     "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-browsersync": "^1.0.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-filesize": "^6.0.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-postcss": "^1.6.3",
+    "rollup-plugin-terser": "^4.0.2",
     "stylelint": "^9.9.0",
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.5.1"
   }
 }
