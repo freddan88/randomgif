@@ -5,6 +5,7 @@ const postcss = require ('rollup-plugin-postcss');
 const {terser} = require ('rollup-plugin-terser');
 const commonjs = require ('rollup-plugin-commonjs');
 const filesize = require ('rollup-plugin-filesize');
+const injectEnv = require ('rollup-plugin-inject-env');
 const browsersync = require ('rollup-plugin-browsersync');
 const nodeResolve = require ('rollup-plugin-node-resolve');
 ///////////////////////////////////////////////////////////
@@ -21,6 +22,7 @@ module.exports = {
   plugins: [
     commonjs(),
     nodeResolve(),
+    injectEnv(),
     postcss({
       extract: true,
       plugins: [
