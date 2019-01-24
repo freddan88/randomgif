@@ -11,7 +11,7 @@
     "test": "stylelint '**/*.scss'; exit 0 && semistandard --verbose | snazzy",
     "www": "php -S 0.0.0.0:8585",
     "help": "echo Browsers supported and usage information: && npx browserslist && echo ' ' && echo 'Usage: npm run: build | start | test | www' && echo ' '",
-    "deploy": "npm run build"
+    "deploy": "npm run build && gh-pages -d public"
   },
   "stylelint": {
     "plugins": [
@@ -26,6 +26,7 @@
     "browserslist": "^4.4.1",
     "build": "^0.1.4",
     "cssnano": "^4.1.8",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "postcss-normalize": "^7.0.1",
     "rollup": "^1.1.2",
