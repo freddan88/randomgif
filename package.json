@@ -10,7 +10,7 @@
     "start": "rollup --config --watch --environment NODE_ENV:production",
     "test": "stylelint '**/*.scss'; exit 0 && semistandard --verbose | snazzy",
     "www": "php -S 0.0.0.0:8585",
-    "help": "echo Browsers supported and usage information: && npx browserslist && echo ' ' && echo 'Usage: npm run: build | start | test | www' && echo ' '",
+    "help": "echo Browsers supported and usage information: && npx browserslist && echo ' ' && echo 'Usage: npm run: build | start | test | www | help | deploy' && echo ' '",
     "deploy": "npm run build && gh-pages -d public"
   },
   "stylelint": {
@@ -36,12 +36,13 @@
     "rollup-plugin-filesize": "^6.0.1",
     "rollup-plugin-inject-env": "^0.1.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-postcss": "^2.0.0",
-    "rollup-plugin-terser": "^4.0.2",
+    "rollup-plugin-postcss": "^2.0.1",
+    "rollup-plugin-terser": "^4.0.3",
     "semistandard": "^13.0.1",
     "snazzy": "^8.0.0",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.5.1"
+    "stylelint-scss": "^3.5.1",
+    "uglify-js": "^3.4.9"
   }
 }
