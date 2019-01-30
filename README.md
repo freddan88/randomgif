@@ -1,5 +1,5 @@
 # randomgif
-Teeny tiny application to search for cool GIFs using node.js
+Teeny tiny application to search for cool GIFs using npm
 
 Searching on GIPY
 
